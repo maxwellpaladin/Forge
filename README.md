@@ -1,2 +1,3 @@
-# Forge
-Website for Forge | Chicago event hosted by Founders - Illinois Entrepreneurs
+# Genesis
+
+This is the website for Genesis, UIUC Founders' crypto-themed startup competition run in Spring 2018.
