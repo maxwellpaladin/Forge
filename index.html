@@ -6,7 +6,11 @@
         <meta name="description" content="Launch a crypto startup over a weekend!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
-        <link rel="shortcut icon" type="image/png" href="assets/logos/forge.png"/>
+        <link rel="shortcut icon" type="image/png" href="assets/logos/forge2.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     </head>
     <body>
         <script>
@@ -25,7 +29,7 @@
         <!--Navigation Bar-->
         <div class="navBarOuter" id="navBar">
             <div class="navBarInner" id="navBar">
-                <a href=""><img id="smallLogo" src="assets/logos/forge.png"></a>
+                <a href=""><img id="smallLogo" src="assets/logos/forge2.png"></a>
                 <button type="button" onclick="location.href='https://goo.gl/forms/iK8TAWajpz3SbY682'" class="cta" id="navCTA" disabled>Apply</button>
                 <nav id="navigation">
                     <a href="#about">About</a>
@@ -39,7 +43,7 @@
         <!--Header-->
         <header class="headerOuter">
             <div class="headerInner">
-                <img id="largeLogo" src="assets/logos/forge.png">
+                <img id="largeLogo" src="assets/logos/forge2.png">
                 <h3>Disrupt the world.</h3>
                 <p>November 9 - 11, <span style="font-family: Roboto-LightItalic;">TechNexus Space - Chicago</span></p>
                 <button type="button" onclick="location.href='https://goo.gl/forms/iK8TAWajpz3SbY682'" class="cta" id="mainCTA" disabled>Apply</button>
@@ -63,6 +67,7 @@
                 <p>Forge is a startup weekend focused on connecting the midwest’s most innovative students and inspire the country’s next industry leaders. The event is student-run and student-focused, with a startup competition and a focus on disruptive dialogue between Chicago’s entrepreneurs and established firms on how we move forward with breakthroughs in every field.</p>
                 <div id="faq"></div>
             </div>
+
             <!--Divider-->
             <object type="image/svg+xml" data="assets/vectors/downSlant.svg" class="downSlant">
                 <svg width="2880px" height="247px" viewBox="0 0 2880 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -74,12 +79,13 @@
                 </svg>
             </object>
         </section>
+
         <!--FAQ-->
         <section class="faqOuter">
             <div class="faqInner">
                 <div class="leftColumn">
                     <div class="application">
-                        <h3 style="text-decoration: underline;">Application</h3>
+                        <h3 style="color:grey;">Application</h3>
                         <div class="question">
                             <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">Who should apply?</span></h3>
                             <div class="answer">
@@ -114,7 +120,7 @@
                         </div>
                     </div>
                     <div class="duringWeekend">
-                        <h3 style="text-decoration: underline;">During the Weekend</h3>
+                        <h3 style="color:grey;">During the Weekend</h3>
                         <div class="question">
                             <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">Can I pitch an idea for a startup that’s already in progress?</span></h3>
                             <div class="answer">
@@ -143,7 +149,7 @@
                 </div>
                 <div class="rightColumn">
                     <div class="general">
-                        <h3 style="text-decoration: underline;">General</h3>
+                        <h3 style="color:grey;">General</h3>
                         <div class="question">
                             <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">What is Forge?</span></h3>
                             <div class="answer">
@@ -213,7 +219,7 @@
                         </div>
                     </div>
                     <div class="logistics">
-                        <h3 style="text-decoration: underline;">Logistics</h3>
+                        <h3 style="color:grey;">Logistics</h3>
                         <div class="question">
                             <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">Can I have a pre-formed team?</span></h3>
                             <div class="answer">
@@ -281,7 +287,7 @@
                 </div>
             </div>
             <!--Divider-->
-            <object type="image/svg+xml" data="assets/vectors/downCrossSlant.svg" class="downCrossSlant" id="sponsors">
+            <object type="image/svg+xml" data="assets/vectors/downCrossSlant.svg" class="downCrossSlant" >
                 <svg width="2880px" height="247px" viewBox="0 0 2880 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="WEBSITE" transform="translate(-62.000000, 0.000000)" fill-rule="nonzero">
@@ -297,7 +303,7 @@
         <!--Speakers-->
         <section class="speakersOuter">
             <div class="speakersInner">
-                <h1 class="inner-header">Speakers, Mentors to be announced shortly</h1>
+                <h1 class="inner-header; clolor : black;">Speakers, Mentors to be announced shortly</h1>
                 <!-- <div class="bio-container">
                     <div class="bio-photo-container"><a href="http://soc1024.ece.illinois.edu/"><img src="assets/bios/andrew_miller.jpg" class="bio-photo"></a></div>
                     <div class="bio-text">
@@ -453,13 +459,29 @@
             </object>
         </section>
         <!--Sponsors-->
-        <!-- <section class="sponsorsOuter">
+      <section class="sponsorsOuter" id = "sponsors">
             <div class="sponsorsInner">
-                <a href="http://jumpcap.com/"><img src="assets/jump/jumpcap.png" class="jumpcap"></a>
-                <a href="http://jumptrading.com/"><img src="assets/jump/jumptra.png" class="jumpcap"></a>
-                <a href="http://jumplabs.com/"><img src="assets/jump/jumplab.png" class="jumpcap"></a>
+              <div class="container">
+        <div class="row">
+          <div class="col-sm">
+<a href="http://facebook.com/"><img src="assets/logos/facebook.png" class="jumpcap"></a>
+<br>
+
+          </div>
+          <div class="col-sm">
+            <br>
+            <br>
+  <a href="http://www.technexus.com"><img src="assets/logos/tn.png"></a>
+          </div>
+          <div class="col-sm">
+          <a href="https://www.illinoistech.org/"><img src="assets/logos/it.png" ></a>
+          </div>
+        </div>
+      </div>
+
+
             </div>
-        </section> -->
+        </section>
         <!--Footer-->
         <div class="footerOuter">
             <footer class="footerInner">
@@ -482,5 +504,9 @@
                 <img id="foundersLogo" src="assets/logos/foundersLogo.png" onclick="location.href='http://founders.illinois.edu/'">
             </footer>
         </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>
