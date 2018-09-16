@@ -43,6 +43,10 @@ html {
     font-family: Roboto-Light;
 }
 
+html a:hover {
+    text-decoration: none;
+}
+
 .cta {
     background-color: #F9A744;
     font-family: Roboto-Light;
@@ -464,10 +468,6 @@ html {
     font-family: Roboto-Regular;
     float: left;
     margin-top: 6px;
-}
-
-.scheduleInner a:hover {
-    text-decoration: underline;
 }
 
 /* PRIZES */
