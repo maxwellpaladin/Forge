@@ -55,11 +55,11 @@ html a:hover {
     border: none;
     border-radius: 3px 3px 3px 3px;
     cursor: pointer;
-    transition: .1s;
+    transition: background-color .3s ease-in-out;
 }
 
 .cta:hover {
-    background-color: #F9A744;
+    background-color: #FF8B00;
 }
 
 /* NAVIGATION BAR */
@@ -335,6 +335,7 @@ html a:hover {
     padding-top: 68px;
     width: 50%;
     margin: auto;
+    text-align: center;
     /* padding-bottom: 68px; */
 }
 
@@ -468,6 +469,10 @@ html a:hover {
     font-family: Roboto-Regular;
     float: left;
     margin-top: 6px;
+}
+
+.scheduleInner a:hover {
+    color: #FF8B00;
 }
 
 /* PRIZES */
