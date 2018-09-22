@@ -85,6 +85,11 @@ html a:hover {
     display: none;
 }
 
+#titleDates {
+    color: #F9A744;
+    font-family: Roboto-Regular;
+}
+
 #smallLogo {
     position: relative;
     margin: 0;
@@ -274,7 +279,7 @@ html a:hover {
 
 .question h3 {
     font-size: 17.5px;
-	color: #F9A744;
+  	color: #F9A744;
     letter-spacing: 1px;
     padding-top: 15px;
     max-width: 315px;
