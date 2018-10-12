@@ -232,38 +232,32 @@ html a:hover {
 /* FAQ */
 
 .faqOuter {
-    position: relative;
     padding-top: 68px;
     width: 100%;
     z-index: 10;
+    height: auto;
 }
 
 .faqInner {
-    position: relative;
     margin: 0 auto;
     width: 57%;
     max-width: 676px;
+    overflow: auto;
 }
 
 .leftColumn {
     float: left;
-    position: relative;
 }
 
-.duringWeekend {
-    padding-top: 68px;
+.rightColumn {
+    float: right;
 }
-
-.general {
-    margin-left: 52%;
-    position: relative;
-}
-
 
 .logistics {
-    margin-left: 52%;
-    position: relative;
-    padding-top: 68px;
+}
+
+.application {
+    padding-top: 70px;
 }
 
 .faqInner h3 {
@@ -304,8 +298,7 @@ html a:hover {
 }
 
 .faqOuter a {
-    color: #FFF;
-    text-decoration: underline;
+    color: #7DABFF;
     transition: .1s;
 }
 
@@ -420,12 +413,16 @@ html a:hover {
 .schedule {
     margin: 0 auto;
     margin-top: 60px;
-    max-width: 676px;
+    max-width: 476px;
     padding-top: 20px;
 }
 
-.plan, .build, .launch {
+.connect {
     float: left;
+}
+
+.pitch {
+    float: right;
 }
 
 .build {
@@ -477,7 +474,12 @@ html a:hover {
 
 /* PRIZES */
 
-
+.prizes {
+    /* font-size: 48px; */
+    padding-top: 60px;
+    color: #FFF;
+    text-align: center;
+}
 
 /* SPONSORS */
 
