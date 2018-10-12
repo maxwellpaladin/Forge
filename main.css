@@ -43,10 +43,6 @@ html {
     font-family: Roboto-Light;
 }
 
-html a:hover {
-    text-decoration: none;
-}
-
 .cta {
     background-color: #F9A744;
     font-family: Roboto-Light;
@@ -55,11 +51,11 @@ html a:hover {
     border: none;
     border-radius: 3px 3px 3px 3px;
     cursor: pointer;
-    transition: background-color .3s ease-in-out;
+    transition: .1s;
 }
 
 .cta:hover {
-    background-color: #FF8B00;
+    background-color: #F9A744;
 }
 
 /* NAVIGATION BAR */
@@ -328,7 +324,6 @@ html a:hover {
     padding-top: 68px;
     width: 50%;
     margin: auto;
-    text-align: center;
     /* padding-bottom: 68px; */
 }
 
@@ -469,7 +464,7 @@ html a:hover {
 }
 
 .scheduleInner a:hover {
-    color: #FF8B00;
+    text-decoration: underline;
 }
 
 /* PRIZES */
@@ -711,4 +706,15 @@ html a:hover {
     .speakersInner {
         width: 90%;
     }
+}
+@media only screen and (max-width: 768px) {
+.aboutInner  p {
+    font-size: 3.0vw;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+.aboutInner  p {
+    font-size: 3.0vw;
+  }
 }
