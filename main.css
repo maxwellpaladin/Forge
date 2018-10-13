@@ -164,9 +164,9 @@ html {
 .headerInner p {
     margin-top: 10px;
     padding-bottom: 23px;
-	font-family: Roboto-Thin;
+	font-family: Roboto-Light;
     font-size: 20px;
-	color: RGB(170,170,170);
+	color: RGB(110,110,110);
 }
 
 #mainCTA {
