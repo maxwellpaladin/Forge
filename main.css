@@ -67,7 +67,7 @@ html {
 .navBarOuter {
     position: fixed;
     height: 80px;
-    width: 100%;
+    width: 100vw;
     font-size: 17px;
     z-index: 100;
     overflow: hidden;
@@ -637,6 +637,7 @@ html {
     opacity: .8;
 }
 
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 687px) {
@@ -687,90 +688,51 @@ html {
 }
 
 @media only screen and (max-width: 1070px) {
-
-    /* FAQ */
-
-    .faqInner {
-        width: 50%;
+    #navBar {
+        display: none;
     }
 
-    .general {
-        clear: left;
-        margin-left: 0px;
-        padding-top: 68px;
+    .aboutInner p {
+        font-size: 16px;
     }
 
-    .logistics {
-        margin-left: 0px;
+    .leftColumn, .rightColumn {
+        float: left;
+        padding-left: 20%;
     }
 
-    /* SPEAKERS */
-
-    .speakersInner {
-        width: 90%;
+    .logistics, .application {
+        padding-top: 50px;
     }
+
+    .scheduleInner {
+        height: 500px;
+    }
+
+    .scheduleOuter .downCrossSlant {
+        margin-top: 498px;
+    }
+
+    .connect, .pitch {
+        display: block;
+        clear: both;
+        float: none;
+        text-align: center;
+    }
+
+    .pitch {
+        padding-top: 50px;
+    }
+
 }
 
 @media only screen and (max-width: 671px) {
 
     /* SCHEDULE */
 
-    .scheduleInner {
-        height: 528px;
-    }
 
-    .scheduleOuter .downCrossSlant {
-        margin-top: 526px;
-    }
-
-    .schedule {
-        width: 50%;
-        margin: 0 auto;
-        padding-top: 70px;
-        padding-bottom: 70px;
-    }
-
-    .plan, .build, .launch {
-        clear: left;
-    }
-
-    .build {
-        padding-top: 30px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    .launch {
-        padding-top: 30px;
-    }
-
-    .schedule h3 {
-        font-size: 20px;
-        letter-spacing: 0px;
-    }
-
-    .schedule p {
-        padding-top: 10px;
-        font-size: 16px;
-        letter-spacing: 0px;
-        line-height: 20px;
-    }
-
-    /* SPONSORS */
-
-    .sponsorsInner {
-        padding-top: 68px;
-        width: 90%;
-        margin: auto;
-        padding-bottom: 68px;
-    }
-
-    /* SPEAKERS */
-
-    .speakersInner {
-        width: 90%;
-    }
 }
+
 @media only screen and (max-width: 768px) {
 .aboutInner  p {
     font-size: 3.0vw;
