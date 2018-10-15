@@ -49,6 +49,10 @@ html {
     font-family: Roboto-Light;
 }
 
+h3 {
+    overflow-y: hidden;
+}
+
 .cta {
     background-color: #F9A744;
     font-family: Roboto-Light;
