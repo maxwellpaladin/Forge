@@ -250,7 +250,6 @@ html {
 .faqInner {
     margin: 0 auto;
     width: 57%;
-    max-width: 676px;
     overflow: auto;
 }
 
@@ -693,6 +692,10 @@ html {
 
     .aboutInner p {
         font-size: 16px;
+    }
+
+    .faqInner {
+        width: 80%;
     }
 
     .leftColumn, .rightColumn {
