@@ -55,11 +55,11 @@ html {
     border: none;
     border-radius: 3px 3px 3px 3px;
     cursor: pointer;
-    transition: .1s;
+    transition: .6s;
 }
 
 .cta:hover {
-    background-color: #F9A744;
+    background-color: #FF8B00;
 }
 
 /* NAVIGATION BAR */
@@ -151,7 +151,7 @@ html {
 }
 
 .headerInner h3, .headerInner p {
-    color: RGB(255, 255, 255);
+    color: #333;
     letter-spacing: 1px;
     text-align: center;
 }
@@ -159,6 +159,7 @@ html {
 .headerInner h3 {
     display: block;
     margin: 0 auto;
+    margin-top: 20px;
     padding-top: 10px;
     width: 350px;
     font-family: Roboto-Thin;
@@ -171,6 +172,10 @@ html {
 	font-family: Roboto-Light;
     font-size: 20px;
 	color: RGB(110,110,110);
+}
+
+.headerInner a:hover {
+    text-decoration: none;
 }
 
 #mainCTA {
