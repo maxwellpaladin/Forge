@@ -252,7 +252,6 @@ html {
 .faqInner {
     margin: 0 auto;
     width: 57%;
-    overflow: auto;
 }
 
 .leftColumn {
@@ -263,7 +262,8 @@ html {
     float: right;
 }
 
-.logistics {
+.general h3, .logistics h3, .application h3 {
+    overflow-y: hidden;
 }
 
 .application {
@@ -348,6 +348,7 @@ html {
     margin-bottom: 50px;
     clear: both;
     font-weight: normal;
+    overflow-y: hidden;
 }
 
 .bio-container {
