@@ -1,5 +1,8 @@
-window.addEventListener('onload', function(e) {
-    console.log("Ass");
+window.addEventListener('load', initParticles);
+
+function initParticles() {
+    console.log("Particles init");
+    return;
     particlesJS("particles", {
         "particles": {
             "number": {
@@ -118,4 +121,4 @@ window.addEventListener('onload', function(e) {
     }, function() {
         // Callback
     });
-});
+};
