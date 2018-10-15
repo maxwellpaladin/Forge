@@ -546,7 +546,6 @@ html {
 
 .sponsorsInner {
     padding-top: 68px;
-    width: 676px;
     margin: auto;
     padding-bottom: 68px;
 }
@@ -721,6 +720,24 @@ html {
     }
 
     .pitch {
+        padding-top: 50px;
+    }
+
+    .prizesInner {
+        height: 500px;
+    }
+
+    .prizesInner .inner-header {
+        padding-top: 50px;
+    }
+
+    .prizesInner ul {
+        padding-left: 10%;
+    }
+
+    .col-sm {
+        padding-left: 25% !important;
+        padding-right: 25% !important;
         padding-top: 50px;
     }
 
