@@ -2,24 +2,23 @@ window.addEventListener('load', initParticles);
 
 function initParticles() {
     console.log("Particles init");
-    return;
     particlesJS("particles", {
         "particles": {
             "number": {
-                "value": 50,
+                "value": 80,
                 "density": {
                     "enable": true,
                     "value_area": 800
                 }
             },
             "color": {
-                "value": "#94BAFF"
+                "value": "#F9A744"
             },
             "shape": {
                 "type": "circle",
                 "stroke": {
                     "width": 0,
-                    "color": "#94BAFF"
+                    "color": "#F9A744"
                 },
                 "polygon": {
                 "nb_sides": 5
@@ -31,7 +30,7 @@ function initParticles() {
                 }
             },
             "opacity": {
-                "value": 0.7,
+                "value": 0.4,
                 "random": false,
                 "anim": {
                     "enable": false,
@@ -45,7 +44,7 @@ function initParticles() {
                 "random": true,
                 "anim": {
                     "enable": false,
-                    "speed": 40,
+                    "speed": 30,
                     "size_min": 0.1,
                     "sync": false
                 }
@@ -53,7 +52,7 @@ function initParticles() {
             "line_linked": {
                 "enable": false,
                 "distance": 200,
-                "color": "#94BAFF",
+                "color": "#F9A744",
                 "opacity": 0.7,
                 "width": 1
             },
@@ -75,8 +74,8 @@ function initParticles() {
             "detect_on": "canvas",
             "events": {
                 "onhover": {
-                    "enable": false,
-                    "mode": "grab"
+                    "enable": true,
+                    "mode": "bubble"
                 },
                 "onclick": {
                     "enable": true,
@@ -92,10 +91,10 @@ function initParticles() {
                     }
                 },
                 "bubble": {
-                    "distance": 400,
-                    "size": 40,
+                    "distance": 500,
+                    "size": 3,
                     "duration": 2,
-                    "opacity": 8,
+                    "opacity": 1,
                     "speed": 3
                 },
                 "repulse": {
