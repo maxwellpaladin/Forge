@@ -705,7 +705,13 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 1070px) {
+@media only screen and (max-width: 1600px) {
+    .faqInner {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
     #navBar {
         display: none;
     }
@@ -767,9 +773,6 @@ h3 {
 }
 
 @media only screen and (max-width: 671px) {
-
-    /* SCHEDULE */
-
 
 }
 
