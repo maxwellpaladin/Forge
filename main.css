@@ -141,7 +141,7 @@ h3 {
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 5;
+    z-index: 1;
     overflow: hidden;
 }
 
@@ -153,6 +153,7 @@ h3 {
     padding-top: 150px; /* margin-top */
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .headerInner {
