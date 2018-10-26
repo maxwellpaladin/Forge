@@ -246,7 +246,7 @@ h3 {
 	line-height: 34px;
 }
 
-.aboutOuter .downSlant, .prizesOuter .downSlant {
+.aboutOuter .downSlant, .prizesOuter .downSlant, .sponsorsOuter .downSlant {
     position: relative;
     margin-top: -1px;
     left: 0;
