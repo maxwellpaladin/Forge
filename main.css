@@ -377,6 +377,7 @@ h3 {
     height: 300px;
     width: 30%;
     display: inline-block;
+    overflow: hidden;
 }
 
 .bio-photo {
@@ -388,6 +389,8 @@ h3 {
     display: inline-block;
     border-radius: 100%;
     border: 10px solid #F9A744;
+    overflow: hidden;
+    height: 300px;
 }
 
 .bio-text {
@@ -403,13 +406,14 @@ h3 {
     margin-left: 50px;
     color: #F9A744;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 50px;
+    overflow: hidden;
 }
 
 .bio-description {
     display: block;
     margin-left: 50px;
-    color: #FFF;
+    color: #333;
     font-size: 20px;
     clear: both;
 }
