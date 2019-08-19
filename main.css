@@ -241,9 +241,9 @@ h3 {
     max-width: 676px;
     color: RGB(255,255,255);
 	font-family: Roboto-Light;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
-	line-height: 34px;
+	line-height: 30px;
 }
 
 .aboutOuter .downSlant, .prizesOuter .downSlant, .sponsorsOuter .downSlant {
@@ -261,6 +261,7 @@ h3 {
 
 .faqOuter {
     padding-top: 68px;
+    padding-bottom: 68px;
     width: 100%;
     z-index: 10;
     height: auto;
@@ -436,7 +437,7 @@ h3 {
 
 .scheduleInner {
     position: absolute;
-    margin-top: -1px;
+    margin-top: -2px; /*changed from -1 to -2 to accamodate 2018 sponsor logo spacing*/
     height: 298px;
     width: 100%;
     z-index: 10;
@@ -486,7 +487,7 @@ h3 {
 .scheduleOuter .downCrossSlant {
     position: relative;
     display: block;
-    margin-top: 296px;
+    margin-top: 295px; /*changed from 296 to 295 to accommodate blurb 2 spacing*/
     left: 0;
     right: 0;
     width: calc(100% + 10px);

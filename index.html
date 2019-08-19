@@ -26,28 +26,22 @@
             });
         </script>
         <!--Navigation Bar-->
-        <div class="navBarOuter" id="navBar">
-            <div class="navBarInner">
-                <a href=""><img id="smallLogo" src="assets/logos/forge2.png"></a>
-                <button type="button" onclick="location.href='https://goo.gl/forms/t12x6NDNRURovR9k2'" class="cta" id="navCTA">Apply</button>
-                <nav id="navigation">
-                    <a href="#faq">FAQ</a>
-                    <a href="#schedule">Schedule</a>
-                    <a href="#speakers">Speakers</a>
-                    <a href="#sponsors">Sponsors</a>
-                    <a href="javascript:void(0);" class="icon" onclick="var x = document.getElementById('navBar'); if (x.className == 'navBarInner') { x.className += ' responsive'; } else { x.className = 'navBarInner'; }">&#9776;</a>
-                </nav>
-            </div>
-        </div>
+<!--DELETED-->
         <!-- Particles -->
         <div id="particles"></div>
         <!--Header-->
         <header class="headerOuter">
             <div class="headerInner">
                 <img id="largeLogo" src="assets/logos/forge2.png">
-                <h3>Disrupt the Midwest.</h3>
-                <p>November 10 - 11, <span style="font-family: Roboto-LightItalic;"><a href="https://www.google.com/maps/place/TechNexus/@41.882564,-87.6374246,15z/data=!4m5!3m4!1s0x0:0xe4423cbdbedf304d!8m2!3d41.882564!4d-87.6374246">TechNexus Space - Chicago</a></span></p>
+                <h3>Disrupt the Midwest</h3>
+                <p>
+                <br>
+                November 9 - 10<span style="font-family: Roboto-LightItalic;">
+                <br>
+                <a href="https://www.google.com/maps/place/TechNexus/@41.882564,-87.6374246,15z/data=!4m5!3m4!1s0x0:0xe4423cbdbedf304d!8m2!3d41.882564!4d-87.6374246">TechNexus Space - Chicago</a></span></p>           
+<!--REMOVING APPLY BUTTON FOR INITIAL SPONSOR SITE
                 <a href='https://goo.gl/forms/t12x6NDNRURovR9k2'><button type="button" class="cta" id="mainCTA">Apply</button></a>
+END APPLY BUTTON REMOVAL-->
             </div>
         </header>
         <!--About-->
@@ -65,11 +59,10 @@
             </object>
             <!--Content-->
             <div class="aboutInner">
-                <p>Forge is a startup weekend focused on connecting the Midwest’s most innovative students and inspire the country’s next industry leaders. The event is student-run and student-focused, with a startup competition and a focus on disruptive dialogue between Chicago’s entrepreneurs and established firms on how we move forward with breakthroughs in every field.</p>
-                <!-- Anchor element for FAQ -->
-                <div id="faq"></div>
+                <p>Forge is a two-day startup weekend which will be held at TechNexus in Chicago, November 9-10. Forge brings together top student entrepreneurs from across the Midwest and successful members of the Midwest ecosystem to help develop their ventures and grow the community. The future of entrepreneurship in the Midwest is bright – developing this future will impact many stakeholders. Forge provides partners a chance to support this future.</p>
+                <!-- Anchor element for sponsors -->
+                <div id="sponsors"></div>
             </div>
-
             <!--Divider-->
             <object type="image/svg+xml" data="assets/vectors/downSlant.svg" class="downSlant">
                 <svg width="2880px" height="247px" viewBox="0 0 2880 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -81,134 +74,54 @@
                 </svg>
             </object>
         </section>
-
-        <!--FAQ-->
-        <section class="faqOuter">
-            <div class="faqInner">
-                <div class="leftColumn">
-                    <div class="general">
-                        <h3 style="color:grey;">General</h3>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">What is Forge?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>Forge is a startup conference and competition. On Saturday we'll have a day full of mentoring, workshops, networking, and pitch preparation. On Sunday, we'll be bringing in investors from VCs around the city to evaluate your pitch and allocate prizes!</p>
-                                </div>
-                            </div>
+<!--MOVED SPONSORS SECTION FROM BOTTOM OF PAGE-->
+        <!--Sponsors-->
+        <section class="sponsorsOuter" id="sponsors">
+            <div class="sponsorsInner">
+                <h1 class="inner-header">Forge 2018 Sponsors</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <br>
+                            <br>
+                            <br>
+                            <img src="assets/logos/technexus.png"></a>
                         </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">What's in it for you?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>Forge builds strong friendships and sustainable businesses that last even after the event is over. We want to build a community of hustlers and connect the Midwest.<br><br>
-                                    <span>Cash Prizes:</span> Prizes to be announced soon! <br>
-                                    <span>Connections:</span> At Forge, you'll meet startups from across the Midwest - you're bound to find someone you connect with.<br>
-                                    <span>Mentoring:</span> Saturday is focused on connecting you with people who can help you scale. Mentors and judges come on their own time to the event because they care about startups and aiding entrepreneurs - these can become lifelong friends, advisers, and investors.<br>
-                                </div>
-                            </div>
+                        <div class="col-sm">
+                            <img style="width: 150px; padding-top: 50px; padding-left: 50px;" src="assets/logos/ita.png" ></a>
                         </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">Will there be food?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>Absolutely! We will have a constant supply of snacks, caffeine, and food – you take care of your startup, we'll take care of you.</p>
-                                </div>
-                            </div>
+                        <div class="col-sm">
+                            <br>
+                            <img src="assets/logos/facebook.png" class="sponsorLogo"></a>
                         </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">Is it overnight?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>This isn't a hackathon, and we believe the best ideas come when you're fully awake. The event won't be staffed overnight, but you're welcome to work as much as you'd like out of the venue.</p>
-                                </div>
-                            </div>
+                        <div class="col-sm">
+                            <br>
+                            <br>
+                            <br>
+                            <img style="width: 200px;" src="assets/logos/AEL.jpg" ></a>
                         </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">404: Question not found?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>Feel free to email us at <a href="mailto:team@founders.illinois.edu">team@founders.illinois.edu</a></p>
-                                </div>
-                            </div>
+                        <div class="col-sm">
+                            <br>
+                            <br>
+                            <img style="width: 200px; background-color: #333; padding: 15px;" src="assets/logos/zenblen.webp" ></a>
                         </div>
                     </div>
-                </div>
-                <div class="rightColumn">
-                    <div class="logistics">
-                        <h3 style="color:grey;">Logistics</h3>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">How should I prepare?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>All you need is your team and a slide deck ready for pitches on Sunday!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">Where can I stay?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>We've booked hotel rooms at the La Quinta Inn about a block away from the venue for remote students, and will inform you of room assignments with your RSVP.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">How do I get there?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>We will be providing transportation for UIUC startups, though if you're a remote attendee and in need of travel reimbursement we may be able to accomodate your request.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">When does the event start and end?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>Check-in starts at 11:00 AM on Saturday, November 10th. The event ends around 6:30 PM on Sunday, November 11th.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">What should I bring?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>A laptop, charger, slide deck, and passion should be enough!</p>
-                                </div>
-                            </div>
-                        </div>
+                    <!--
+                    <div class="row">
+                    -->
+                        <!-- <div class="col-sm">
+                            <a href="https://www.tovala.com/"><img src="assets/logos/tovala.png" ></a>
+                        </div> -->
+                    <!--
                     </div>
-                    <div class="application">
-                        <h3 style="color:grey;">Application</h3>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">Who should apply?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>Forge is open to students of all majors and ages. We strongly believe that entrepreneurship isn’t tied to a major – anyone with a passion to solve a problem can build a startup.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">When will I hear back?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>Applications will be evaluated on a rolling basis. If you haven't heard back before November 1st, send us an email at team@founders.illinois.edu</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">Do I have to be a student?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>The event is focused on student entrepreneurs, but recent grads are welcome to apply and we'll be taking a few!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    -->
                 </div>
             </div>
+        </section>
             <!-- Anchor element for schedule -->
             <div id="schedule"></div>
         </section>
+<!--About #2 (FROM MODIFIED SCHEDULE SECTION)-->
         <!--Schedule-->
         <section class="scheduleOuter">
             <!--Divider-->
@@ -223,20 +136,8 @@
             </object>
             <!--Content-->
             <div class="scheduleInner">
-                <div class="schedule">
-                    <div class="connect">
-                        <h3>Day 1: <span>Connect</span></h3>
-                        <p>Introduction<br>
-                        Keynote<br>
-                        Workshops / Talks</p>
-                    </div>
-                    <div class="pitch">
-                        <h3>Day 2: <span>Pitch</span></h3>
-                        <p>Presentations<br>
-                        Judging<br>
-                        Prizes</p>
-                        <a href="assets/schedule.png" target="_blank">View Full Schedule</a>
-                    </div>
+                <div class="aboutInner">
+                    <p>There are many positive externalities to fostering a more cohesive entrepreneurship space in the Midwest. For potential partners in the venture capital space, Forge allows exposure to top entrepreneurs before they even graduate. Corporate and startup partners can expose their brands to top students across the Midwest who may choose to pursue their ventures part-time and work for one of their organizations. These benefits come in addition to all of the externalities associated with encouraging top students entrepreneurs to call the Midwest home.</p>
                 </div>
             </div>
             <!--Divider-->
@@ -252,374 +153,102 @@
                     </g>
                 </svg>
             </object>
-            <!-- Anchor element for speakers -->
-            <div id="speakers"></div>
+            <!-- Anchor element for FAQ -->
+            <div id="faq"></div>
         </section>
-        <!--Speakers-->
-        <section class="speakersOuter">
-            <div class="speakersInner">
-                <h1 class="inner-header">Speakers</h1>
-                <br>
-                <br>
-                <br>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://en.wikipedia.org/wiki/Neal_Sales-Griffin"><img src="assets/bios/neal_sales_griffin.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Keynote: Neal Sáles-Griffin</p>
-                        <p class="bio-description">Neal is a Chicago entrepreneur and educator. He co-founded Code Academy, the first coding bootcamp program in the world, and is the CEO of CodeNow, a nonprofit that teaches coding to low-income high school students. He has also worked in venture capital and served on various technology boards to advise the government and academic organizations on effectively implementing technology programs for underserved populations. He is also running for mayor of Chicago in 2019 on a people-first platform.</p>
+        <!--FAQ-->
+        <section class="faqOuter">
+            <div class="faqInner">
+                <h3 style="color:grey;">FAQ</h3>
+                <div class="leftColumn">
+                    <div class="general">
+                        <div class="question">
+                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">What would a partnership with Forge look like?</span></h3>
+                            <div class="answer">
+                                <div class="measuringWrapper">
+                                    <p>There are many ways for external organizations to get involved with Forge. Sending mentors, judges, or panelists is the first way to make a huge impact. For those partners interested in taking the next step to gain additional exposure, we will provide partnership package tiers upon request.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">Do I have to stay the entire time?</span></h3>
+                            <div class="answer">
+                                <div class="measuringWrapper">
+                                    <p>We recognize that partners are busy – we only ask that you stay for the duration of the panel/pitch you agreed to participate in or judge.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">What kind of ventures will be at Forge?</span></h3>
+                            <div class="answer">
+                                <div class="measuringWrapper">
+                                    <p>Forge seeks to promote diversity in founders and venture types. Forge 2018 was attended by founders from 11 midwestern universities across fields from med-tech to non-profit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">Will there be networking opportunities built into the event?</span></h3>
+                            <div class="answer">
+                                <div class="measuringWrapper">
+                                    <p>Yes!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">What does a committed partner look like?</span></h3>
+                            <div class="answer">
+                                <div class="measuringWrapper">
+                                    <p>Check out our partnership package! Send us an email at <a href="mailto:brincks3@illinois.edu">brincks3@illinois.edu</a> or <a href="mailto:cjm13@illinois.edu">cjm13@illinois.edu</a> and we’ll provide it to you.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/jacksonjhin/"><img src="assets/bios/jackson_jhin.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">VC 101: Jackson Jhin</p>
-                        <p class="bio-description">Jackson is a venture capitalist with Chicago Ventures, where he works directly with the firm's portfolio companies and new investments. He is also a board observer at Cameo, a startup creating a marketplace to connect influencers and fans with personalized shoutouts. He was a co-founder at Float Tickets, a ticketing marketplace where users can trade their flexibility for money, and has held several summer positions in the securities and investment banking industries.</p>
+                <div class="rightColumn">
+                    <div class="logistics">
+                        <div class="question">
+                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">What if I want to stay the whole time?</span></h3>
+                            <div class="answer">
+                                <div class="measuringWrapper">
+                                    <p>You are more than welcome to stay for the whole weekend.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">How many representatives can I bring?</span></h3>
+                            <div class="answer">
+                                <div class="measuringWrapper">
+                                    <p>1-3 representatives are welcome as space is limited.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">Are there room accommodations for mentors, guests, partners, and other attendees?</span></h3>
+                            <div class="answer">
+                                <div class="measuringWrapper">
+                                    <p>Unfortunately no. We can recommend some nice hotels near TechNexus.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">What is the exact address of TechNexus?</span></h3>
+                            <div class="answer">
+                                <div class="measuringWrapper">
+                                    <p>TechNexus is located in the Civic Opera house at 20 N Upper Wacker Dr #1200, Chicago, IL</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://jumpcap.com/jump_capital_team/saurabh-sharma/"><img src="assets/bios/saurabh_sharma.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Blockchain Panel: Saurabh Sharma</p>
-                        <p class="bio-description">Saurabh is currently a partner at Jump Capital, where he invests in the next wave of blockchain infrastructure and applications. In the past, he was the Head of Personalization and Head of Global Marketing & Special operations at Ideel, a Groupon company. He also served as Vice President at Lightbank, where he advised entrepreneurs to build disruptive companies.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/jimmyjodom/"><img src="assets/bios/jimmy_odom.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Blockchain Panel: Jimmy Odom</p>
-                        <p class="bio-description">Jimmy is the co-founder and CEO of the Bit Capital Group, a blockchain security company providing end-to-end cryptocurrency mining management services, as well as the Director of Inclusive Entrepreneurship at World Business Chicago. Previously, he served as the Acting Assistant Director for the Illinois Department of Central Management Services, an agency that provides a broad range of programs and services to state agencies and the public. Jimmy founded WeDeliver, a crowd-sourced delivery platform that enables local merchants to fulfill same-day delivers.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://twitter.com/disruptionjoe"><img src="assets/bios/joe_hernandez.png" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Blockchain Panel: Disruption Joe</p>
-                        <p class="bio-description">Joe Hernandez, aka “Disruption Joe,” is the Founder of Chicago Blockchain Project. His vision is a world where individuals create their own value instead of being told what they are worth.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/rubinow/"><img src="assets/bios/steve_rubinow.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Blockchain Panel: Steve Rubinow</p>
-                        <p class="bio-description">Steve is an accomplished technology expert across multiple industries. He currently serves on the advisory board of many ventures, including Canvas Ventures and Sutter Hill Ventures, and as the Director of the DePaul University Institute for Professional Development. He was previously the CIO of Thomson Reuters and CIO/CTO of the NYSE Group for over a decade. In all roles, he has ignited innovation and transformed the companies he has worked with.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/manuedakara/"><img src="assets/bios/manu_edakara.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">University Entrepreneurship Q&A: Manu Edakara</p>
-                        <p class="bio-description">Manu is the Associate Director of Entrepreneurial Communities at UIUC. He also directs the iVenture Accelerator at the university, where he advises the top startups on campus on how to scale. Previously, Manu has worked at Facebook and built several companies of his own. One of these companies is AdCat, a platform that lets users generate perfectly sized, up-to-date ad images for various social media platforms.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/e-j-reedy-42ab321/"><img src="assets/bios/ej_reedy.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">University Entrepreneurship Q&A: E.J. Reedy</p>
-                        <p class="bio-description">E.J. is the senior director of the Polsky Exchange, the Polsky Center’s 34,000 square foot co-working space on 54rd street in Hyde Park. In addition to his role at the Polsky Exchange, E.J. leads the Polsky Center’s fintech initiatives and the Polsky Accelerator program. He is a global thought leader in entrepreneurship, having spent the last decade working for the Ewing Marion Kauffman Foundation, the largest philanthropy devoted to promoting entrepreneurship. E.J.’s research and commentary has been featured in the New York Times, Wall Street Journal, and a host of other global outlets.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/mattrasto/"><img src="assets/bios/matt_rastovac.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Student Entrepreneurship Q&A: Matt Rastovac</p>
-                        <p class="bio-description">Matt is a senior at UIUC studying Computer Science. He's the Co-President of Founders, the entrepreneurship club - in his time with Founders, he has directed 4 startup competitions and built a community of entrepreneurs on campus. He's deeply passionate about enabling student innovators, and he founded Forge to further pursue the vision of a strong Midwest entrepreneurship scene. He has experience in multiple fields, from machine learning to blockchain to complex systems, and is an obsessive builder and advocate for tools that improve lives.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/akashanant/"><img src="assets/bios/anant_akash.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Student Entrepreneurship Q&A: Anant Akash</p>
-                        <p class="bio-description">Anant is a senior at the University of Michigan, studying Computer Science and Entrepreneurship (as much as anyone can study how to be an entrepreneur). He is part of the Entrepreneurs Leadership Program at Michigan as well as the founder of intern.community, the largest community of interns in the country. He is passionate about helping students and startups out of the Midwest.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/archita-mishra-323595134/"><img src="assets/bios/archita_mishra.png" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Student Entrepreneurship Q&A: Archita Mishra</p>
-                        <p class="bio-description">Archita is a sophomore at the University of Chicago studying Economics, Data Science, Statistics and Creative Writing. She is the Vice President of Business Development at Midway Ventures, UChicago's premier Entrepreneurship and Venture Capital organization, and has spearheaded a multitude of different projects with the young entrepreneurship ecosystem in the Midwest and Silicon Valley, the most recent being the Chicago Venture Capital Competition. She is a strong advocate for Women and Diversity in Entrepreneurship and Venture, and her passion is to use technological innovation to overcome any number of social, cultural and ease-of-living related issues. She has an array of experience working as a Venture Capital Analyst, a Portfolio Liason, and has industry experience in Consumer Healthcare, AgTech, ECommerce and SaaS platforms.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/phedayatnia/"><img src="assets/bios/phillip_hedayatnia.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Student Entrepreneurship Q&A: Phil Hedayatnia</p>
-                        <p class="bio-description">Phil currently leads product and design at TrustedFor, a professional social network that aggregates anonymous recommendations of skills and abilities to generate reputation-based credentials. Previously, he co-founded and led SolverIQ, a company building software using psychometrics, critical skill assessment, and culture fit analysis to match people with jobs. Phil serves on the board of ProjectileX, a nonprofit whose entrepreneurship education programs have reached 120,000 students across 220 programs in 15 countries; he worked at Wildfire Education helping high school and college educators improve pedagogy; he led Gary Johnson's digital campaign team in 2016; and, he founded two other companies in the cloud computing and digital publishing spaces. Phil is currently on leave from Rice University in Houston, TX, where he was a Cognitive Science degree candidate, Trustee Harvey Scholar, and Liu Idea Lab Fellow.</p>
-                    </div>
-                </div>
-                <h1 class="inner-header">Mentors</h1>
-                <br>
-                <br>
-                <br>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/xujasmine/"><img src="assets/bios/jasmine_xu.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Jasmine Xu</p>
-                        <p class="bio-description">Jasmine is currently a Product Manager on the Facebook Marketplace team. She's been at Facebook for 2 years, joining through the Rotational Product Manager program. Prior to Marketplace, she worked on Instagram and a project with the Chan Zuckerberg Initiative.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/ericmills2/"><img src="assets/bios/eric_mills.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Eric Mills</p>
-                        <p class="bio-description">Eric graduated from UIUC in 2014 with a BS in Computer Science. Eric has been actively involved with entrepreneurship on campus since 2010. He founded the student organization Founders in 2013, worked at TEC for 3 years, and became a student fellow for Chicago Ventures. He worked at multiple high profile startups like Civis Analytics and Rithmio as a software engineer, specializing in infrastructure for data science. In 2017, he was accepted into the YCombinator (W17) startup accelerator for his hardware company LitHit, which built reactive smart targets for shooting ranges. Eric is currently in Chicago consulting for data science and software engineering.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/manuedakara/"><img src="assets/bios/manu_edakara.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Manu Edakara</p>
-                        <p class="bio-description">Manu is the Associate Director of Entrepreneurial Communities at UIUC. He also directs the iVenture Accelerator at the university, where he advises the top startups on campus on how to scale. Previously, Manu has worked at Facebook and built several companies of his own. One of these companies is AdCat, a platform that lets users generate perfectly sized, up-to-date ad images for various social media platforms.</p>
-                    </div>
-                </div>
-                <!-- <div class="bio-container">
-                    <div class="bio-photo-container"><a href=""><img src="assets/bios/jerry_huang.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Jerry Huang</p>
-                        <p class="bio-description">Jerry is the Director of Profile Coaching at Trilogy Education. He was previously the Senior Program Director for Entrepreneurship at UChicago, where he was instrumental in supporting the student entrepreneurship ecosystem on campus. He was also the Executive Director for Giftback, a non-profit focused on matching charitable donations with name-brand products to create high-impact gifts. His experience spans across consulting, VC, and portfolio management for various firms.</p>
-                    </div>
-                </div> -->
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/tom-xinyuan-zhang-89897277/"><img src="assets/bios/tom_zhang.webp" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Tom Zhang</p>
-                        <p class="bio-description">Tom is the co-founder and CEO of Zenblen, a startup developing a convenient smoothie machine that serves healthy and delicious smoothies. He has an extensive history in strategy consultancy for both private equity firms and corporate clients. Tom graduated from UChicago with a Bachelor's in Economics.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/stephaniemellinger/"><img src="assets/bios/stephanie_mellinger.webp" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Stephanie Mellinger</p>
-                        <p class="bio-description">Stephanie is the co-founder and head of marketing and sales for Zenblen, a startup developing a convenient smoothie machine that serves healthy and delicious smoothies. She's worked in marketing and sales for several Fortune 500 companies. Stephanie received her Bachelor's in Marketing from Ferris State University with a concentration in Spanish and a minor in International Business.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/jacksonjhin/"><img src="assets/bios/jackson_jhin.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Jackson Jhin</p>
-                        <p class="bio-description">Jackson is a venture capitalist with Chicago Ventures, where he works directly with the firm's portfolio companies and new investments. He is also a board observer at Cameo, a startup creating a marketplace to connect influencers and fans with personalized shoutouts. He was a co-founder at Float Tickets, a ticketing marketplace where users can trade their flexibility for money, and has held several summer positions in the securities and investment banking industries.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/peter-fiflis-628b0623/"><img src="assets/bios/peter_fiflis.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Peter Fiflis</p>
-                        <p class="bio-description">Peter is the Director of R&D of Tovala, a startup developing a steam-oven that prepares delicious, ready-to-cook meals. Peter graduated from UIUC in 2016 with a graduate degree in the Nuclear, Plasma, and Radiological Engineering department. He's conducted research in his field at the university as well as Argonne National Laboratory.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/shahnihal/"><img src="assets/bios/nihal_shah.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Nihal Shah</p>
-                        <p class="bio-description">Nihal is a Software Engineer in the Facebook Messenger App. He specifically works on an initiative in Messenger Business called Sponsored Messages, and is a Full-Stack engineer.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/henrychengnu/"><img src="assets/bios/hongwei_chen.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Hongwei Chen</p>
-                        <p class="bio-description">Hongwei is a software engineer at Facebook. He is currently on the Billing Experience team, which develops tools to support advertisers with their payment systems. He was previously on the Ad Break team, which aims to shape the video ecosystem at Facebook by helping video creators monetize their qualified content with ads. Before Facebook, Hongwei was a sales engineer at Texas Instruments. He graduated with an MS in Computer Engineering at Northwestern University and his undergraduate degree from Shanghai Jiatong University.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/maxime-ollivier-872b5a24/"><img src="assets/bios/maxime_ollivier.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Maxime Ollivier</p>
-                        <p class="bio-description">Maxime is a software engineer at Instagram and focuses on iOS performance. Before that, he worked on a dozen products, ranging from a concert ticket app to a smart smoke detector. He majored in Industrial Engineering from Northwestern in 2012.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/nataliemuenster/"><img src="assets/bios/natalie_muenster.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Natalie Muenster</p>
-                        <p class="bio-description">Natalie just graduated from Stanford University, having studied Computer Science with a focus in AI. She's from Milwaukee, Wisconsin (Packers fan!), and is now living in San Francisco. Natalie joined Facebook two months ago and was just placed with her team, so now she's working on the server for Messenger Surface Ads.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/oscar-mendoza-4869a6136/"><img src="assets/bios/oscar_mendoza.png" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Oscar Mendoza</p>
-                        <p class="bio-description">Oscar spent his childhood in a suburb of Boston, MA until he left for Purdue University where he studied computer science. Currently he is working at tastyworks, an online brokerage located in the west loop. There he serves as the lead Devops engineer, working hand and hand with our CTO Jordan von Kluck focusing on automation, configuration management, monitoring, and IAC (Infrastructure as code). He's working as a middle man between the developers and the infrastructure team to make sure tastyworks's micro-services architecture is operating properly with effortless deployments. Outside of work he is a die hard Cubs fan and travels as much as he can. </p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/lukasp1/"><img src="assets/bios/lukas_pranciliauskas.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Lukas Pranciliauskas</p>
-                        <p class="bio-description">Lukas is a Junior Developer working for Tastyworks. He recently graduated from UIUC with his BS in Computer Engineering. While working at Tastyworks he has made leaps as a developer - he's have worked on the mobile side of things as well as learned about setting up infrastructure. Working at Tastyworks has also helped him establish a solid understanding of options trading and has led him to invest in his free time. Outside of work, he likes watching sports and learning more about new technologies.</p>
-                    </div>
-                </div>
-                <h1 class="inner-header">Judges</h1>
-                <br>
-                <br>
-                <br>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/stevengalanis/"><img src="assets/bios/steven_galanis.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Steven Galanis</p>
-                        <p class="bio-description">Steven is the Founder and CEO of Cameo, a marketplace where fans can book personalized video shoutouts from their favorite people. He also serves on the Board of Directors for Habitat for Humanity Chicago. He was previously a sales solutions account executive at LinkedIn while he managed and produced at his own production studio, and he's held positions in various industries from entertainment to options trading to real estate.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/itsabhinaya/"><img src="assets/bios/abhinaya_konduru.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Abhinaya Konduru</p>
-                        <p class="bio-description">Abhinaya is a venture capitalist at M25, an early-stage VC focused on Midwest startups. She started Hustlepreneur, a Youtube series where she showcases up-and-coming entrepreneurs by documenting their day. Abhinaya graduated from the University of Illinois at Chicago, where she led the finance student organization and co-founded the Portfolio Management Team. She was also a part of numerous programs to help increase digital literacy in the community by partnering with Google and Blue1647.</p>
-                    </div>
-                </div>
-                <div class="bio-container">
-                    <div class="bio-photo-container"><a href="https://www.linkedin.com/in/zacharyrudzki/"><img src="assets/bios/zak_rudzki.jpg" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name">Zak Rudzki</p>
-                        <p class="bio-description">Zak leads a US Department of Homeland Security smart city innovation lab on behalf of TechNexus and is a mentor for startups in ApartmentOne. As a mentor for ApartmentOne companies, Zak is focused on helping student founders grow their business off-campus. Previously, he has worked as a strategy associate at NexLP, a Chicago based AI startup and as a cyber wargaming consultant at Booz Allen Hamilton. Outside of tech, Zak is an active investor in Chicago's real estate market.</p>
-                    </div>
-                </div>
-                <!-- <div class="bio-container">
-                    <div class="bio-photo-container"><a href=""><img src="assets/bios/___" class="bio-photo"></a></div>
-                    <div class="bio-text">
-                        <p class="bio-name"></p>
-                        <p class="bio-description"></p>
-                    </div>
-                </div> -->
             </div>
             <!-- Anchor element for speakers -->
             <div id="speakers"></div>
         </section>
+<!--ORIGINAL SPEAKERS LOCATION-->       
         <!--Prizes-->
-        </section>
-        <section class="prizesOuter">
-            <!--Divider-->
-            <object type="image/svg+xml" data="assets/vectors/upCrossSlant.svg" class="upCrossSlant">
-                <svg width="2880px" height="247px" viewBox="0 0 2880 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="UpwardsDivider" fill-rule="nonzero">
-                            <polygon id="Rectangle-14" fill="#FF6161" transform="translate(1440.000000, 122.500000) scale(-1, 1) translate(-1440.000000, -122.500000) " points="0 0 2880 245 0 245"></polygon>
-                            <path d="M0,0 L2880,245 C2880,245.769513 2880,246.15427 2880,246.15427 C2880,246.15427 1920,246.15427 0,246.15427 L0,0 Z" id="Rectangle-14" fill="#222222"></path>
-                        </g>
-                    </g>
-                </svg>
-            </object>
-            <!--Content-->
-            <div class="prizesInner" id="prizes">
-              <h1 class="inner-header">Prizes</h1>
-              <ul>
-                  <li>Founders Prize: $1,500</li>
-                  <li>Best Social Impact Venture: $1,000</li>
-                  <li>Best Blockchain Startup: $1,000</li>
-              </ul>
-            </div>
-            <!--Divider-->
-            <object type="image/svg+xml" data="assets/vectors/downSlant.svg" class="downSlant">
-                <svg width="2880px" height="247px" viewBox="0 0 2880 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="UpwardsDivider" fill-rule="nonzero" fill="#222222">
-                            <path d="M0,0 L2880,245 C2880,245.769513 2880,246.15427 2880,246.15427 C2880,246.15427 1920,246.15427 0,246.15427 L0,0 Z" id="Rectangle-14" transform="translate(1440.000000, 123.077135) scale(-1, -1) translate(-1440.000000, -123.077135) "></path>
-                        </g>
-                    </g>
-                </svg>
-            </object>
-        </section>
-        <!--Sponsors-->
-      <section class="sponsorsOuter" id="sponsors">
-            <div class="sponsorsInner">
-                <h1 class="inner-header">Sponsors</h1>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
-                            <br>
-                            <a href="http://facebook.com/"><img src="assets/logos/facebook.png" class="sponsorLogo"></a>
-                        </div>
-                        <div class="col-sm">
-                            <br>
-                            <br>
-                            <br>
-                            <a href="http://www.technexus.com"><img src="assets/logos/technexus.png"></a>
-                        </div>
-                        <div class="col-sm">
-                            <a href="https://www.illinoistech.org/"><img src="assets/logos/ita.png" ></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm">
-                            <br>
-                            <br>
-                            <br>
-                            <a href="https://business.illinois.edu/ael/"><img src="assets/logos/AEL.jpg" ></a>
-                        </div>
-                        <div class="col-sm">
-                            <br>
-                            <br>
-                            <a href="https://www.zenblen.com/"><img style="width: 350px; background-color: #333; padding: 10px;" src="assets/logos/zenblen.webp" ></a>
-                        </div>
-                        <!-- <div class="col-sm">
-                            <a href="https://www.tovala.com/"><img src="assets/logos/tovala.png" ></a>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="sponsorsOuter" id="sponsors">
-            <object type="image/svg+xml" data="assets/vectors/upCrossSlant.svg" class="upCrossSlant">
-                <svg width="2880px" height="247px" viewBox="0 0 2880 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="UpwardsDivider" fill-rule="nonzero">
-                            <polygon id="Rectangle-14" fill="#FF6161" transform="translate(1440.000000, 122.500000) scale(-1, 1) translate(-1440.000000, -122.500000) " points="0 0 2880 245 0 245"></polygon>
-                            <path d="M0,0 L2880,245 C2880,245.769513 2880,246.15427 2880,246.15427 C2880,246.15427 1920,246.15427 0,246.15427 L0,0 Z" id="Rectangle-14" fill="#222222"></path>
-                        </g>
-                    </g>
-                </svg>
-            </object>
-            <!--Divider-->
-            <object type="image/svg+xml" data="assets/vectors/downSlant.svg" class="downSlant">
-                <svg width="2880px" height="247px" viewBox="0 0 2880 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="UpwardsDivider" fill-rule="nonzero" fill="#222222">
-                            <path d="M0,0 L2880,245 C2880,245.769513 2880,246.15427 2880,246.15427 C2880,246.15427 1920,246.15427 0,246.15427 L0,0 Z" id="Rectangle-14" transform="translate(1440.000000, 123.077135) scale(-1, -1) translate(-1440.000000, -123.077135) "></path>
-                        </g>
-                    </g>
-                </svg>
-            </object>
-            <div class="sponsorsInner">
-                <h1 class="inner-header">Universities</h1>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
-                            <br>
-                            <img src="assets/logos/uiuc.jpg" class="sponsorLogo">
-                        </div>
-                        <div class="col-sm">
-                            <br>
-                            <br>
-                            <br>
-                            <img src="assets/logos/uiuc-founders.png" >
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm">
-                            <br>
-                            <img src="assets/logos/northwestern.png" class="sponsorLogo">
-                        </div>
-                        <div class="col-sm">
-                            <img src="assets/logos/northwestern-epic.jpg" >
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="row">
-                        <div class="col-sm">
-                            <br>
-                            <img src="assets/logos/uchicago.png" class="sponsorLogo">
-                        </div>
-                        <div class="col-sm">
-                            <img src="assets/logos/uchicago-midway-ventures.png" >
-                        </div>
-                        <div class="col-sm">
-                            <img src="assets/logos/uchicago-diversity-in-business.png" >
-                        </div>
-                    </div>
-                </div>
-              </div>
-          </section>
+<!--DELETED-->
+<!--ORIGINAL SPONSORS SECTION LOCATION-->
+<!--ORIGINAL "NICE TO HAVE" SECTION LOCATION-->        
         <!--Footer-->
         <div class="footerOuter">
             <footer class="footerInner">
@@ -637,7 +266,8 @@
                             </g>
                         </svg>
                     </object>
-                    <a href="mailto:team@founders.illinois.edu">team@founders.illinois.edu</a>
+                    <a href="mailto:cjm13@illinois.edu">cjm13@illinois.edu</a>
+                    <a href="mailto:brincks3@illinois.edu">brincks3@illinois.edu</a>
                 </div>
                 <img id="foundersLogo" src="assets/logos/foundersLogo.png" onclick="location.href='http://founders.illinois.edu/'">
             </footer>
