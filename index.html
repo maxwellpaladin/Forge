@@ -26,7 +26,20 @@
             });
         </script>
         <!--Navigation Bar-->
-<!--DELETED-->
+        <div class="navBarOuter" id="navBar">
+            <div class="navBarInner">
+                <a href=""><img id="smallLogo" src="assets/logos/forge2.png"></a>
+                <button type="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScJ8gJuODEATT4GI6bUETdJSlmw1tMNvI2BRtgNiC9TY-a-qw/viewform?usp=sf_link'" class="cta" id="navCTA">Apply</button>
+                <nav id="navigation">
+                    <a href="#about">About</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#schedule">Schedule</a>
+                    <a href="#sponsors">Sponsors</a>
+                    <a href="#speakers">Speakers</a>
+                    <a href="javascript:void(0);" class="icon" onclick="var x = document.getElementById('navBar'); if (x.className == 'navBarInner') { x.className += ' responsive'; } else { x.className = 'navBarInner'; }">&#9776;</a>
+                </nav>
+            </div>
+        </div>
         <!-- Particles -->
         <div id="particles"></div>
         <!--Header-->
@@ -38,11 +51,15 @@
                 <br>
                 November 9 - 10<span style="font-family: Roboto-LightItalic;">
                 <br>
-                <a href="https://www.google.com/maps/place/TechNexus/@41.882564,-87.6374246,15z/data=!4m5!3m4!1s0x0:0xe4423cbdbedf304d!8m2!3d41.882564!4d-87.6374246">TechNexus Space - Chicago</a></span></p>           
-<!--REMOVING APPLY BUTTON FOR INITIAL SPONSOR SITE
-                <a href='https://goo.gl/forms/t12x6NDNRURovR9k2'><button type="button" class="cta" id="mainCTA">Apply</button></a>
-END APPLY BUTTON REMOVAL-->
-            </div>
+                <a href="https://www.google.com/maps/place/TechNexus/@41.882564,-87.6374246,15z/data=!4m5!3m4!1s0x0:0xe4423cbdbedf304d!8m2!3d41.882564!4d-87.6374246">TechNexus Space - Chicago</a></span></p>
+                </div>
+                <div class="headerOuter2">
+                    <div class="headerInner2">
+                        <p>Forge is the largest student-run startup weekend in the midwest! Engage with venture capitalists, seasoned entrepreneurs, successful community members, and other top student startups from across the midwest.</p>
+                        <p>Stay updated by following <a href="https://www.facebook.com/illinoisfounders/">Founders - Illinois Entrepreneurs</a> on Facebook!</p>
+                    </div>
+                <a href='https://docs.google.com/forms/d/e/1FAIpQLScJ8gJuODEATT4GI6bUETdJSlmw1tMNvI2BRtgNiC9TY-a-qw/viewform?usp=sf_link'><button type="button" class="cta" id="mainCTA">Apply</button></a>
+                </div>
         </header>
         <!--About-->
         <section class="aboutOuter" id="about">
@@ -59,9 +76,7 @@ END APPLY BUTTON REMOVAL-->
             </object>
             <!--Content-->
             <div class="aboutInner">
-                <p>Forge is a two-day startup weekend which will be held at TechNexus in Chicago, November 9-10. Forge brings together top student entrepreneurs from across the Midwest and successful members of the Midwest ecosystem to help develop their ventures and grow the community. The future of entrepreneurship in the Midwest is bright – developing this future will impact many stakeholders. Forge provides partners a chance to support this future.</p>
-                <!-- Anchor element for sponsors -->
-                <div id="sponsors"></div>
+                <p>Forge is a two-day startup weekend over November 9-10th at Technexus that brings together top student entrepreneurs from across the Midwest and successful members from the ecosystem to help develop your venture. During the weekend, you will interact with the entrepreneurship community through networking lunches, one-on-one mentoring, panels, presentations and more. On the final day of Forge, you’ll have the opportunity to pitch your company and win cash grants up to $1,500 and more.</p>
             </div>
             <!--Divider-->
             <object type="image/svg+xml" data="assets/vectors/downSlant.svg" class="downSlant">
@@ -73,57 +88,155 @@ END APPLY BUTTON REMOVAL-->
                     </g>
                 </svg>
             </object>
+            <!-- Anchor element for FAQ -->
+            <div id="faq"></div>
         </section>
-<!--MOVED SPONSORS SECTION FROM BOTTOM OF PAGE-->
-        <!--Sponsors-->
-        <section class="sponsorsOuter" id="sponsors">
-            <div class="sponsorsInner">
-                <h1 class="inner-header">Forge 2018 Sponsors</h1>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
-                            <br>
-                            <br>
-                            <br>
-                            <img src="assets/logos/technexus.png"></a>
-                        </div>
-                        <div class="col-sm">
-                            <img style="width: 150px; padding-top: 50px; padding-left: 50px;" src="assets/logos/ita.png" ></a>
-                        </div>
-                        <div class="col-sm">
-                            <br>
-                            <img src="assets/logos/facebook.png" class="sponsorLogo"></a>
-                        </div>
-                        <!--
-                        <div class="col-sm">
-                            <br>
-                            <br>
-                            <br>
-                            <img style="width: 200px;" src="assets/logos/AEL.jpg" ></a>
-                        </div>
-                        -->
-                        <div class="col-sm">
-                            <br>
-                            <br>
-                            <img style="width: 200px; background-color: #333; padding: 15px;" src="assets/logos/zenblen.webp" ></a>
+        <!--FAQ-->
+        <section class="faqOuter">
+                <div class="faqInner">
+                    <h3 style="color:grey;">FAQ</h3>
+                    <div class="leftColumn">
+                        <div class="general">
+                            <h3 style="text-decoration: underline;">General</h3>
+                            <div class="question">
+                                <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow" alt="arrow"><span onselectstart="return false;">What’s in it for you?</span></h3>
+                                <div class="answer">
+                                    <div class="measuringWrapper">
+                                        <p>Meeting seasoned entrepreneurs, venture capitalists, members of the entrepreneurship community, and meeting other top student startups from across the Midwest. You’ll be meeting a diverse group of people and will have the opportunity to win cash prizes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow" alt="arrow"><span onselectstart="return false;">Will there be food?</span></h3>
+                                <div class="answer">
+                                    <div class="measuringWrapper">
+                                        <p>Yep! Saturday and Sunday lunch, and Sunday breakfast will be provided. There will be snacks too from several food startups.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow" alt="arrow"><span onselectstart="return false;">Is lodging provided?</span></h3>
+                                <div class="answer">
+                                    <div class="measuringWrapper">
+                                        <p>An Airbnb stipend will be provided to students traveling outside the Chicagoland area.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow" alt="arrow"><span onselectstart="return false;">Is transportation provided?</span></h3>
+                                <div class="answer">
+                                    <div class="measuringWrapper">
+                                        <p>Attendees will be reimbursed for their travel to TechNexus. For the University of Illinois students from Urbana-Champaign, a bus will be provided.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow" alt="arrow"><span onselectstart="return false;">How will the pitching competition work?</span></h3>
+                                <div class="answer">
+                                    <div class="measuringWrapper">
+                                        <p>On November 10th, the pitching competition will take place. It will be split into preliminary rounds and final rounds, and selected startups will make it to the final round. There will be no allocated time during the weekend to work on your pitch, so come prepared!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow" alt="arrow"><span onselectstart="return false;">Does every startup need to pitch?</span></h3>
+                                <div class="answer">
+                                    <div class="measuringWrapper">
+                                        <p>Nope! You do not have to pitch, but don’t give up the opportunity to win a prize!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow" alt="arrow"><span onselectstart="return false;">What kind of prizes are available?</span></h3>
+                                <div class="answer">
+                                    <div class="measuringWrapper">
+                                        <p>1. 3 month free membership at mHub
+                                            <br>
+                                            2. $1,000 Microgrant from 1517 Fund
+                                            <br>
+                                            3. More cash prizes!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow" alt="arrow"><span onselectstart="return false;">What are past participants up to?</span></h3>
+                                <div class="answer">
+                                    <div class="measuringWrapper">
+                                        <p>Last year, <a rhef="https://business.facebook.com/psyonicinc/">Psyonic</a> from the University of Illinois at Urbana-Champaign won $1,000 cash and has since raised a seed round and launched the product.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow" alt="arrow"><span onselectstart="return false;">404: Question not found?</span></h3>
+                                <div class="answer">
+                                    <div class="measuringWrapper">
+                                        <p>Feel free to email us at <a href="mailto:team@founders.illinois.edu">team@founders.illinois.edu</a></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!--
-                    <div class="row">
-                    -->
-                        <!-- <div class="col-sm">
-                            <a href="https://www.tovala.com/"><img src="assets/logos/tovala.png" ></a>
-                        </div> -->
-                    <!--
+                    <div class="rightColumn">
+                        <div class="application">
+                                <h3 style="text-decoration: underline;">Application</h3>
+                                <div class="question">
+                                    <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow" alt="arrow"><span onselectstart="return false;">Who should apply?</span></h3>
+                                    <div class="answer">
+                                        <div class="measuringWrapper">
+                                            <p>Any student startup! Forge is open to all majors, ages, and Midwest schools. Forge‘s aim is venture growth and bringing the Midwest Entrepreneurship community together, so all Midwest student ventures are welcome.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow" alt="arrow"><span onselectstart="return false;">When will I hear back?</span></h3>
+                                    <div class="answer">
+                                        <div class="measuringWrapper">
+                                            <p>The application’s deadline is October 28, and we will be sending out acceptances on a rolling basis. Everyone will hear back by November 1st.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow" alt="arrow"><span onselectstart="return false;">What can I do in the meantime?</span></h3>
+                                    <div class="answer">
+                                        <div class="measuringWrapper">
+                                            <p>Get your business cards and pitch together, and prepare for a packed weekend! Also, tell your friends and check out our Facebook event and social media links to get updates. :)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="logistics">
+                            <h3 style="text-decoration: underline;">Logistics</h3>
+                            <div class="question">
+                                <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow" alt="arrow"><span onselectstart="return false;">When does the event start and end?</span></h3>
+                                <div class="answer">
+                                    <div class="measuringWrapper">
+                                        <p>The event starts at 10 am on November 9th at TechNexus and ends at 5 pm on November 10th.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow" alt="arrow"><span onselectstart="return false;">What should I bring?</span></h3>
+                                <div class="answer">
+                                    <div class="measuringWrapper">
+                                        <p>Laptop, charger, notebook, anything you need for an overnight stay, your pitch, and excitement!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow" alt="arrow"><span onselectstart="return false;">How many people from my team can I bring?</span></h3>
+                                <div class="answer">
+                                    <div class="measuringWrapper">
+                                        <p>1 to 4 people from your venture can come!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    -->
                 </div>
-            </div>
-        </section>
-            <!-- Anchor element for schedule -->
-            <div id="schedule"></div>
-        </section>
-<!--About #2 (FROM MODIFIED SCHEDULE SECTION)-->
+                <!-- Anchor element for schedule -->
+                <div id="schedule"></div>
+            </section>
         <!--Schedule-->
         <section class="scheduleOuter">
             <!--Divider-->
@@ -139,7 +252,7 @@ END APPLY BUTTON REMOVAL-->
             <!--Content-->
             <div class="scheduleInner">
                 <div class="aboutInner">
-                    <p>There are many positive externalities to fostering a more cohesive entrepreneurship space in the Midwest. For potential partners in the venture capital space, Forge allows exposure to top entrepreneurs before they even graduate. Corporate and startup partners can expose their brands to top students across the Midwest who may choose to pursue their ventures part-time and work for one of their organizations. These benefits come in addition to all of the externalities associated with encouraging top student entrepreneurs to call the Midwest home.</p>
+                    <p>Schedule coming soon!</p>
                 </div>
             </div>
             <!--Divider-->
@@ -155,90 +268,36 @@ END APPLY BUTTON REMOVAL-->
                     </g>
                 </svg>
             </object>
-            <!-- Anchor element for FAQ -->
-            <div id="faq"></div>
+            <!-- Anchor element for sponsors -->
+            <div id="sponsors"></div>
         </section>
-        <!--FAQ-->
-        <section class="faqOuter">
-            <div class="faqInner">
-                <h3 style="color:grey;">FAQ</h3>
-                <div class="leftColumn">
-                    <div class="general">
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">What would a partnership with Forge look like?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>There are many ways for external organizations to get involved with Forge. Sending mentors, judges, or panelists is the first way to make a huge impact. For those partners interested in taking the next step to gain additional exposure, we will provide partnership package tiers upon request.</p>
-                                </div>
-                            </div>
+        <!--Sponsors-->
+        <section class="sponsorsOuter" id="sponsors">
+            <div class="sponsorsInner">
+                <h1 class="inner-header">2019 Sponsors</h1>
+                <div class="container">
+                    <div class="col-sm">
+                        <div class="row">
+                            <img src="assets/logos/2019Sponsors/technexus.png" class="sponsorLogo">
                         </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">Do I have to stay the entire time?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>We recognize that partners are busy – we only ask that you stay for the duration of the panel/pitch you agreed to participate in or judge.</p>
-                                </div>
-                            </div>
+                        <div class="row">
+                            <img src="assets/logos/2019Sponsors/tovala.png" class="sponsorLogo">
                         </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">What kind of ventures will be at Forge?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>Forge seeks to promote diversity in founders and venture types. Forge 2018 was attended by founders from 11 midwestern universities across fields from med-tech to non-profit.</p>
-                                </div>
-                            </div>
+                        <div class="row">
+                            <br>
+                            <img src="assets/logos/2019Sponsors/quevos.png" class="sponsorLogo">
                         </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">Will there be networking opportunities built into the event?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>Yes!</p>
-                                </div>
-                            </div>
+                        <div class="row">
+                            <br>
+                            <img src="assets/logos/2019Sponsors/tastytrade.png" class="sponsorLogo">
                         </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">What does a committed partner look like?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>Check out our partnership package! Send us an email at <a href="mailto:brincks3@illinois.edu">brincks3@illinois.edu</a> or <a href="mailto:cjm13@illinois.edu">cjm13@illinois.edu</a> and we’ll provide it to you.</p>
-                                </div>
-                            </div>
+                        <div class="row">
+                            <br>
+                            <img src="assets/logos/2019Sponsors/tiestatea.png" class="sponsorLogo">
                         </div>
-                    </div>
-                </div>
-                <div class="rightColumn">
-                    <div class="logistics">
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">What if I want to stay the whole time?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>You are more than welcome to stay for the whole weekend.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">How many representatives can I bring?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>1-3 representatives are welcome as space is limited.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">Are there room accommodations for mentors, guests, partners, and other attendees?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>Unfortunately no. We can recommend some nice hotels near TechNexus.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <h3 onclick="var answer = this.nextElementSibling; if (answer.clientHeight) { answer.style.height = 0; this.children[0].style.transform = 'rotate(0deg)'; /*this.children[1].style.color = 'RGB(255,120,0)';*/ } else { var wrapper = answer.childNodes[1]; answer.style.height = wrapper.clientHeight + 'px'; this.children[0].style.transform = 'rotate(90deg)'; /*this.children[1].style.color = 'RGB(255,255,255)';*/ } "><img src="assets/arrow.png" class="arrow"><span onselectstart="return false;">What is the exact address of TechNexus?</span></h3>
-                            <div class="answer">
-                                <div class="measuringWrapper">
-                                    <p>TechNexus is located in the Civic Opera house at 20 N Upper Wacker Dr #1200, Chicago, IL</p>
-                                </div>
-                            </div>
+                        <div class="row">
+                            <br>
+                            <img src="assets/logos/2019Sponsors/ovael.png" class="sponsorLogo">
                         </div>
                     </div>
                 </div>
@@ -246,11 +305,14 @@ END APPLY BUTTON REMOVAL-->
             <!-- Anchor element for speakers -->
             <div id="speakers"></div>
         </section>
-<!--ORIGINAL SPEAKERS LOCATION-->       
-        <!--Prizes-->
-<!--DELETED-->
-<!--ORIGINAL SPONSORS SECTION LOCATION-->
-<!--ORIGINAL "NICE TO HAVE" SECTION LOCATION-->        
+        <!--Speakers-->
+        <section  class="speakersOuter" id="speakers">
+            <div class="speakersInner">
+                <div class="inner-header">
+                    <h1 class="inner-header">2019 Speakers coming soon!</h1>
+                </div>
+            </div>
+        </section>
         <!--Footer-->
         <div class="footerOuter">
             <footer class="footerInner">

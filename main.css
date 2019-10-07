@@ -150,7 +150,16 @@ h3 {
 .headerOuter {
     position: relative; /* absolute */
     display: block;
-    padding-top: 150px; /* margin-top */
+    padding-top: 100px; /* margin-top */
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.headerOuter2 {
+    position: relative;
+    display: block;
+    padding-top: 0px; /* margin-top */
     left: 0;
     width: 100%;
     z-index: 1;
@@ -159,6 +168,12 @@ h3 {
 .headerInner {
     margin: 0 auto;
     width: 27.8%;
+    min-width: 350px;
+}
+
+.headerInner2 {
+    margin: 0 auto;
+    width: 50%;
     min-width: 350px;
 }
 
@@ -179,17 +194,26 @@ h3 {
     display: block;
     margin: 0 auto;
     margin-top: 20px;
-    padding-top: 10px;
+    padding-top: 5px;
     width: 350px;
     font-family: Roboto-Thin;
     font-size: 24px;
 }
 
 .headerInner p {
-    margin-top: 10px;
-    padding-bottom: 23px;
+    margin-top: 5px;
+    padding-bottom: 5px;
 	font-family: Roboto-Light;
     font-size: 20px;
+	color: RGB(110,110,110);
+}
+
+.headerInner2 p {
+    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 5px;
+	font-family: Roboto-Light;
+    font-size: 18px;
 	color: RGB(110,110,110);
 }
 
@@ -269,7 +293,7 @@ h3 {
 
 .faqInner {
     margin: 0 auto;
-    width: 40%;
+    width: 50%;
 }
 
 .leftColumn {
@@ -280,12 +304,16 @@ h3 {
     float: right;
 }
 
+.logistics {
+    padding-top: 50px;
+}
+
 .general h3, .logistics h3, .application h3 {
     overflow-y: hidden;
 }
 
 .application {
-    padding-top: 70px;
+    padding-top: 0px;
 }
 
 .faqInner h3 {
@@ -353,7 +381,8 @@ h3 {
 }
 
 .speakersInner {
-    padding-top: 68px;
+    padding-top: 0px;
+    padding-bottom: 50px;
     width: 50%;
     margin: auto;
     /* padding-bottom: 68px; */
@@ -577,9 +606,9 @@ h3 {
 
 .sponsorLogo {
     position: relative;
-    width: 75%;
-    margin-left: 12.5%;
-    margin-bottom: 20px;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 50px;
 }
 
 .sponsorsInner .inner-header {
