@@ -480,11 +480,11 @@ h3 {
     padding-top: 20px;
 }
 
-.connect {
+.saturday {
     float: left;
 }
 
-.pitch {
+.sunday {
     float: right;
 }
 
@@ -501,6 +501,7 @@ h3 {
 }
 
 .schedule p {
+    text-align: center;
     padding-top: 20px;
     color: RGB(255,255,255);
 	font-family: Roboto-Light;
@@ -529,7 +530,7 @@ h3 {
 .scheduleInner a {
     text-decoration: none;
     color: #F9A744;
-    font-family: Roboto-Regular;
+    font-family: Roboto-light;
     float: left;
     margin-top: 6px;
 }
